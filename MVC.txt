@@ -1,0 +1,45 @@
+Web Servicer - back end e front end - html-css-js  lib.javascrits
+-back end nao desenha paginas- somente devolve os dados
+java script desenha.
+
+Template Engine
+
+HTML CSS JS
+
+Tamplate Engine L
+^
+Controllers L
+V
+Model
+
+o Browser se comunica com a camada de controllers
+A resposta sera em html e nao em dados como Web Services
+
+Model : domain model
+-o sistema
+Entities e Services
+Repositories (dados persistentes)
+
+Controllers: Receber e tratar as interaçoes do usuario com o sistemas
+
+Viwes: Definir a estrutura e comportamento das telas
+
+Padrao MVC
+
+Comunicao entre as camadas
+
+View
+Controles
+Model-Services - Data - Entities
+
+Web Services - React, Vue.js, Jquery, Angular
+MVC - Java-Spring-Thymeleaf
+    - C# - ASP.NET CORE - @RAZOR ENGINE 
+    - PHP - laravel - Blade Template	
+
+
+
+NIVELAMENTO - ENTITY FRAMEWORK
+
+-
+
