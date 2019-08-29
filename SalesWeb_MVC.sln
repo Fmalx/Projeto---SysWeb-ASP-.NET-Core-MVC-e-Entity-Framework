@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29209.62
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalesWeb-MVC", "SalesWeb-MVC\SalesWeb-MVC.csproj", "{F2808439-B0C9-4F61-8CF1-68ABFB594231}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SalesWeb_MVC", "SalesWeb-MVC\SalesWeb_MVC.csproj", "{F2808439-B0C9-4F61-8CF1-68ABFB594231}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
