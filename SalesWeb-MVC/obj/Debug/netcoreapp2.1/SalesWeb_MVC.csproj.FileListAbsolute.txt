@@ -14,6 +14,11 @@ C:\Users\felip_000\OneDrive\Cursos\C#\C#COMPLETO\Exercicios\SalesWeb-MVC\SalesWe
 C:\Users\felip_000\OneDrive\Cursos\C#\C#COMPLETO\Exercicios\SalesWeb-MVC\SalesWeb-MVC\obj\Debug\netcoreapp2.1\SalesWeb_MVC.TagHelpers.input.cache
 C:\Users\felip_000\OneDrive\Cursos\C#\C#COMPLETO\Exercicios\SalesWeb-MVC\SalesWeb-MVC\obj\Debug\netcoreapp2.1\SalesWeb_MVC.TagHelpers.output.cache
 C:\Users\felip_000\OneDrive\Cursos\C#\C#COMPLETO\Exercicios\SalesWeb-MVC\SalesWeb-MVC\obj\Debug\netcoreapp2.1\SalesWeb_MVC.RazorCoreGenerate.cache
+C:\Users\felip_000\OneDrive\Cursos\C#\C#COMPLETO\Exercicios\SalesWeb-MVC\SalesWeb-MVC\obj\Debug\netcoreapp2.1\Razor\Views\Departamentos\Create.g.cshtml.cs
+C:\Users\felip_000\OneDrive\Cursos\C#\C#COMPLETO\Exercicios\SalesWeb-MVC\SalesWeb-MVC\obj\Debug\netcoreapp2.1\Razor\Views\Departamentos\Delete.g.cshtml.cs
+C:\Users\felip_000\OneDrive\Cursos\C#\C#COMPLETO\Exercicios\SalesWeb-MVC\SalesWeb-MVC\obj\Debug\netcoreapp2.1\Razor\Views\Departamentos\Details.g.cshtml.cs
+C:\Users\felip_000\OneDrive\Cursos\C#\C#COMPLETO\Exercicios\SalesWeb-MVC\SalesWeb-MVC\obj\Debug\netcoreapp2.1\Razor\Views\Departamentos\Edit.g.cshtml.cs
+C:\Users\felip_000\OneDrive\Cursos\C#\C#COMPLETO\Exercicios\SalesWeb-MVC\SalesWeb-MVC\obj\Debug\netcoreapp2.1\Razor\Views\Departamentos\Index.g.cshtml.cs
 C:\Users\felip_000\OneDrive\Cursos\C#\C#COMPLETO\Exercicios\SalesWeb-MVC\SalesWeb-MVC\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
 C:\Users\felip_000\OneDrive\Cursos\C#\C#COMPLETO\Exercicios\SalesWeb-MVC\SalesWeb-MVC\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
 C:\Users\felip_000\OneDrive\Cursos\C#\C#COMPLETO\Exercicios\SalesWeb-MVC\SalesWeb-MVC\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
