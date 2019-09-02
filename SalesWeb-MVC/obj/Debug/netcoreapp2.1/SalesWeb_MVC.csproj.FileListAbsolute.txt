@@ -35,3 +35,4 @@ C:\Users\felip_000\OneDrive\Cursos\C#\C#COMPLETO\Exercicios\SalesWeb-MVC\SalesWe
 C:\Users\felip_000\OneDrive\Cursos\C#\C#COMPLETO\Exercicios\SalesWeb-MVC\SalesWeb-MVC\obj\Debug\netcoreapp2.1\SalesWeb_MVC.dll
 C:\Users\felip_000\OneDrive\Cursos\C#\C#COMPLETO\Exercicios\SalesWeb-MVC\SalesWeb-MVC\obj\Debug\netcoreapp2.1\SalesWeb_MVC.pdb
 C:\Users\felip_000\OneDrive\Cursos\C#\C#COMPLETO\Exercicios\SalesWeb-MVC\SalesWeb-MVC\obj\Debug\netcoreapp2.1\SalesWeb_MVC.csproj.CopyComplete
+C:\Users\felip_000\OneDrive\Cursos\C#\C#COMPLETO\Exercicios\SalesWeb-MVC\SalesWeb-MVC\obj\Debug\netcoreapp2.1\Razor\Views\Vendedores\Index.g.cshtml.cs
