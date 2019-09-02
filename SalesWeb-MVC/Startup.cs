@@ -11,6 +11,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using SalesWeb_MVC.Models;
+using SalesWeb_MVC.Data;
+
 
 namespace SalesWeb_MVC
 {
@@ -37,15 +39,18 @@ namespace SalesWeb_MVC
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             services.AddDbContext<SalesWeb_MVCContext>(options =>
-                   options.UseMySql(Configuration.GetConnectionString("SalesWeb_MVCContext"), builder => builder.MigrationsAssembly("SalesWeb_MVC")));
+                   options.UseMySql(Configuration.GetConnectionString("SalesWeb_MVCContext"), builder => builder.MigrationsAssembly("SalesWeb_MVC")));//MYSQL ADICIONADO
+
+            services.AddScoped<SeedingService>();//ADICIONA -- Regista o serviço na injecao de independecia
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env,SeedingService seedingService)
         {
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                seedingService.Seed();
             }
             else
             {
