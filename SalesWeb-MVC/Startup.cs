@@ -12,6 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using SalesWeb_MVC.Models;
 using SalesWeb_MVC.Data;
+using SalesWeb_MVC.Services;
 
 
 namespace SalesWeb_MVC
@@ -42,6 +43,7 @@ namespace SalesWeb_MVC
                    options.UseMySql(Configuration.GetConnectionString("SalesWeb_MVCContext"), builder => builder.MigrationsAssembly("SalesWeb_MVC")));//MYSQL ADICIONADO
 
             services.AddScoped<SeedingService>();//ADICIONA -- Regista o serviço na injecao de independecia
+            services.AddScoped<VendedorService>();//Pode ser adicionando em outras clasess
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
