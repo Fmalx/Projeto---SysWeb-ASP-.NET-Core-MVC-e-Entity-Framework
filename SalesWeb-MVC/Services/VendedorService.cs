@@ -20,5 +20,11 @@ namespace SalesWeb_MVC.Services
         {
             return _context.Vendedor.ToList();
         }
+
+        public void Inserir(Vendedor obj)//insere os vendedores no bando apartir do formulario vendedor
+        {
+            _context.Add(obj);
+            _context.SaveChanges();
+        }
     }
 }
