@@ -23,6 +23,7 @@ namespace SalesWeb_MVC.Services
 
         public void Inserir(Vendedor obj)//insere os vendedores no bando apartir do formulario vendedor
         {
+            obj.Departamento = _context.Departamento.First();
             _context.Add(obj);
             _context.SaveChanges();
         }
