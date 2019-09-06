@@ -41,5 +41,29 @@ namespace SalesWeb_MVC.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        public IActionResult Delete(int? id)// int opcional  
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var obj = _vendedorService.FindById(id.Value);
+
+            if (obj == null)
+            {
+                return NotFound();
+            }
+
+            return View(obj);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Delete(int id)
+        {
+            _vendedorService.Remove(id);
+            return RedirectToAction(nameof(Index));
+        }
     }
 }
