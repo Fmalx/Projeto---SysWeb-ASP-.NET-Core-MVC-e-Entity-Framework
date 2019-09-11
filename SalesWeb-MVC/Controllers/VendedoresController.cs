@@ -65,5 +65,23 @@ namespace SalesWeb_MVC.Controllers
             _vendedorService.Remove(id);
             return RedirectToAction(nameof(Index));
         }
+
+
+        public IActionResult Detalhes(int? id)// int opcional  
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var obj = _vendedorService.FindById(id.Value);
+
+            if (obj == null)
+            {
+                return NotFound();
+            }
+
+            return View(obj);
+        }
     }
 }
