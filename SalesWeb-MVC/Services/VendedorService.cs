@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using SalesWeb_MVC.Data;
 using SalesWeb_MVC.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace SalesWeb_MVC.Services
 {
@@ -30,7 +31,7 @@ namespace SalesWeb_MVC.Services
 
         public Vendedor FindById(int id)// encontra por Id caso nao tiver retorna nullo
         {
-            return _context.Vendedor.FirstOrDefault(obj => obj.Id == id);
+            return _context.Vendedor.Include(obj => obj.Departamento).FirstOrDefault(obj => obj.Id == id);
         }
 
         public void Remove(int id)
