@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using SalesWeb_MVC.Data;
 using SalesWeb_MVC.Models;
 using Microsoft.EntityFrameworkCore;
+using SalesWeb_MVC.Services.Exceptions;
 
 namespace SalesWeb_MVC.Services
 {
@@ -39,6 +40,24 @@ namespace SalesWeb_MVC.Services
             var obj = _context.Vendedor.Find(id);
             _context.Vendedor.Remove(obj);
             _context.SaveChanges();
+        }
+
+        public void Atualizar(Vendedor obj)
+        {
+            if (!_context.Vendedor.Any(x => x.Id == obj.Id))
+            {
+                throw new KeyNotFoundException("Id não exite");
+            }
+
+            try
+            {
+                _context.Update(obj);
+                _context.SaveChanges();
+            }
+            catch (DbUpdateConcurrencyException e)
+            {
+                throw new DbConcurrencyException(e.Message);
+            }
         }
 
     }
