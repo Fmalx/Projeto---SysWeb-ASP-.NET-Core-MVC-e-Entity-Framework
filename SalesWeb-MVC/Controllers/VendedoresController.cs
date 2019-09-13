@@ -39,6 +39,12 @@ namespace SalesWeb_MVC.Controllers
         [ValidateAntiForgeryToken]// notacao para evitar ataques maliciosos
         public IActionResult Create(Vendedor vendedor)
         {
+            if (!ModelState.IsValid)// teste de validação form
+            {
+                var departamento = _departamentoService.FindALL();
+                var viewModel = new VendedorFormViewModel { Vendedor = vendedor, Departamentos = departamento };
+                return View(viewModel);
+            }
             _vendedorService.Inserir(vendedor);
             return RedirectToAction(nameof(Index));
         }
@@ -108,6 +114,12 @@ namespace SalesWeb_MVC.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Editar(int id, Vendedor vendedor)
         {
+            if (!ModelState.IsValid)// teste de validação form
+            {
+                var departamento = _departamentoService.FindALL();
+                var viewModel = new VendedorFormViewModel { Vendedor = vendedor, Departamentos = departamento };
+                return View(viewModel);
+            }
             if (id != vendedor.Id)
             {
                 return RedirectToAction(nameof(Error), new { Mensagem = "Id não conresponde" });
