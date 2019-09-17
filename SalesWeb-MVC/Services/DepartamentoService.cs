@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 using SalesWeb_MVC.Data;
 using SalesWeb_MVC.Models;
 
@@ -16,9 +17,9 @@ namespace SalesWeb_MVC.Services
             _MVCContext = context;
         }
 
-        public List<Departamento> FindALL()// metodo para ordenar o nome dos departamentos
+        public async Task<List<Departamento>> FindALLAsync()// metodo para ordenar o nome dos departamentos
         {
-            return _MVCContext.Departamento.OrderBy(x => x.Nome).ToList();
+            return await _MVCContext.Departamento.OrderBy(x => x.Nome).ToListAsync();
         }
 
     }

@@ -21,7 +21,7 @@ namespace SalesWeb_MVC.Models
         [Required(ErrorMessage = "Data é Obrigatoria")]
         [Display(Name = "Data de Aniversario")] // customiza o nome da classe que aparece no site
         [DataType(DataType.Date)] // customiza o campo, no caso tira hora e mantem somente a data
-        [DisplayFormat(DataFormatString ="{0:dd/MM/yyyy}")]// altera o tipo da data para dia mes e ano
+        [DisplayFormat(DataFormatString ="{0: dd/MM/yyyy}")]// altera o tipo da data para dia mes e ano
         public DateTime DataNascimento { get; set; }
 
         [Required(ErrorMessage = "Salario é Obrigatorio")]

@@ -18,33 +18,34 @@ namespace SalesWeb_MVC.Services
             _context = context;
         }
 
-        public List<Vendedor> FindAll()
+        public async Task<List<Vendedor>> FindAllAsync()
         {
-            return _context.Vendedor.ToList();
+            return await _context.Vendedor.ToListAsync();
         }
 
-        public void Inserir(Vendedor obj)//insere os vendedores no bando apartir do formulario vendedor
+        public async Task InserirAsync(Vendedor obj)//insere os vendedores no bando apartir do formulario vendedor
         {
-            obj.Departamento = _context.Departamento.First();
+           
             _context.Add(obj);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
         }
 
-        public Vendedor FindById(int id)// encontra por Id caso nao tiver retorna nullo
+        public async Task<Vendedor> FindByIdAsync(int id)// encontra por Id caso nao tiver retorna nullo
         {
-            return _context.Vendedor.Include(obj => obj.Departamento).FirstOrDefault(obj => obj.Id == id);
+            return await _context.Vendedor.Include(obj => obj.Departamento).FirstOrDefaultAsync(obj => obj.Id == id);
         }
 
-        public void Remove(int id)
+        public async  Task RemoveAsync(int id)
         {
-            var obj = _context.Vendedor.Find(id);
+            var obj = await _context.Vendedor.FindAsync(id);
             _context.Vendedor.Remove(obj);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
         }
 
-        public void Atualizar(Vendedor obj)
+        public async  Task AtualizarAsync(Vendedor obj)
         {
-            if (!_context.Vendedor.Any(x => x.Id == obj.Id))
+            bool Temalgum = await _context.Vendedor.AnyAsync(x => x.Id == obj.Id);
+            if (!Temalgum)
             {
                 throw new KeyNotFoundException("Id não exite");
             }
@@ -52,7 +53,7 @@ namespace SalesWeb_MVC.Services
             try
             {
                 _context.Update(obj);
-                _context.SaveChanges();
+                await _context.SaveChangesAsync();
             }
             catch (DbUpdateConcurrencyException e)
             {
