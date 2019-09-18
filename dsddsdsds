@@ -1,0 +1,23 @@
+[33m4517a35[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m Fase 22: Exception para deletar(integridade referencial)
+[33m54ceb44[m[33m ([m[1;31morigin/master[m[33m)[m Fase 21: Operaçoes Assicronas usando Task(async, await)
+[33m58f8179[m Fase 20: Validações
+[33m100403d[m Fase 19: Localização, Numero e Formatando data
+[33m25f3791[m Fase 18: Retornando pagina customizada de Erros
+[33m776570f[m Fase 17: Vendedores Atualizar e Serviço Customizado de Exceptions
+[33m864a781[m Fase 16: Eager loading = carregando obj relacionados de outras classes
+[33m58fd70d[m Fase 15: Link Detalhes e Delete (.html) Atualizados
+[33m1bc0d2c[m Fase 14: Delete vendedor
+[33m695e2d1[m Fase 13: VendedorFormViewModel e Departamento com componente select
+[33m449236b[m Fase 12: Foreign key Not Null (integridade referencial)
+[33md19aba0[m Fase 11: Criando a tela cadastro Vendedor e metodos para inserção
+[33ma8449ba[m Fase 10: VendedorService e FindAll basico
+[33md632f6d[m Fase 09: VendedoresControlle
+[33mbc0b872[m Fase 08: SeedService Class
+[33m28fabe5[m Adiciontando outras Entidades e a segunda Migration
+[33m96e620e[m Fase 06: Aterando o tema Bootstrap - bootstrap-flatly.css
+[33m0b6fa21[m Fase 05: Adaptando MySql e Criando a primeira Migration = Departamento
+[33m2b041d7[m Fase 04: CRUD Scaffolding
+[33m06aa954[m Fase 03: Deletando Departamento VIEW e CONTROLLER
+[33m28420f0[m Fase 02: Primeiro Model-Controller-View = Departamento
+[33md4dc177[m Fase 01: Primeiro Controle e teste na pagina Razor = About
+[33m235eca1[m Fase 00: Inicio

@@ -40,3 +40,6 @@ C:\Users\felip_000\OneDrive\Cursos\C#\C#COMPLETO\Exercicios\SalesWeb-MVC\SalesWe
 C:\Users\felip_000\OneDrive\Cursos\C#\C#COMPLETO\Exercicios\SalesWeb-MVC\SalesWeb-MVC\obj\Debug\netcoreapp2.1\Razor\Views\Vendedores\Delete.g.cshtml.cs
 C:\Users\felip_000\OneDrive\Cursos\C#\C#COMPLETO\Exercicios\SalesWeb-MVC\SalesWeb-MVC\obj\Debug\netcoreapp2.1\Razor\Views\Vendedores\Detalhes.g.cshtml.cs
 C:\Users\felip_000\OneDrive\Cursos\C#\C#COMPLETO\Exercicios\SalesWeb-MVC\SalesWeb-MVC\obj\Debug\netcoreapp2.1\Razor\Views\Vendedores\Editar.g.cshtml.cs
+C:\Users\felip_000\OneDrive\Cursos\C#\C#COMPLETO\Exercicios\SalesWeb-MVC\SalesWeb-MVC\obj\Debug\netcoreapp2.1\Razor\Views\RegistroVenda\Index.g.cshtml.cs
+C:\Users\felip_000\OneDrive\Cursos\C#\C#COMPLETO\Exercicios\SalesWeb-MVC\SalesWeb-MVC\obj\Debug\netcoreapp2.1\Razor\Views\RegistroVenda\BuscaSimples.g.cshtml.cs
+C:\Users\felip_000\OneDrive\Cursos\C#\C#COMPLETO\Exercicios\SalesWeb-MVC\SalesWeb-MVC\obj\Debug\netcoreapp2.1\Razor\Views\RegistroVenda\BuscaGrupo.g.cshtml.cs
